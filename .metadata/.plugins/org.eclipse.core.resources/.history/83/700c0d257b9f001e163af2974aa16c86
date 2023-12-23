@@ -1,0 +1,7 @@
+import java.util.ArrayList;
+
+public class Programme23 {
+
+	ArrayList arl = new ArrayList();
+	arl
+}

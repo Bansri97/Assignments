@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Programme5 {
+
+	public static void main(String[] args) {
+		int a;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number : ");
+		a=sc.nextInt();
+		
+		String numStr = String.valueOf(a);
+		char[] numbers = numStr.toCharArray();	
+		int i = 0;
+		int total = 0;
+		while(i < numbers.length) {
+			int n = numbers[i] - '0';
+			total = total + (n * n * n);
+			i++;
+		}
+		if(total == a) {
+			System.out.println("Number is a armstrong number");	
+		}
+		else {
+			System.out.println("Number is not a armstrong number");	
+		}
+	}
+}

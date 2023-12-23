@@ -1,0 +1,13 @@
+
+public class Programme15 {
+
+	public static void main(String[] args) {
+		String s1="Bansri";
+		String s2="Bansri";
+		String s3=new String("Bansri");
+		String s4="Jensi";
+		System.out.println(s1==s2);
+		System.out.println(s1==s3);
+		System.out.println(s3==s2);
+	}
+}

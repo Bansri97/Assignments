@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Programme3 {
+
+	public static void main(String[] args) {
+		int a,b;
+		Scanner sc=new Scanner(System.in);
+		a=sc.nextInt();
+		System.out.println("Enter Number : ");
+		b=1;
+		
+		while(b<=a)
+		{
+			System.out.println(b);
+			b++;
+		}
+		
+	}
+}

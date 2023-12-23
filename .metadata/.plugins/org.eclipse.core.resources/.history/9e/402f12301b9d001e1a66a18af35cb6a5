@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Programme3 {
+
+	public static void main(String[] args) {
+		int a,b,factorial;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Number : ");
+		a=sc.nextInt();
+		b=1;
+		factorial=1;
+		
+		while(b<=a)
+		{
+			System.out.println(b);
+			factorial=factorial*b;
+			b++;
+		}
+		System.out.println(factorial);
+	}
+}

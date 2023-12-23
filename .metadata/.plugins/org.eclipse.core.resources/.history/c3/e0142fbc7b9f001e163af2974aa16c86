@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+public class Programme23 {
+	   public static void main(String[] args) {  
+
+	ArrayList<String> arr = new ArrayList<String>(5);  
+   
+    arr.add("Helen");  
+	 }
+}
