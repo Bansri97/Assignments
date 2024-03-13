@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "0963ff29-0a90-4d05-ae75-9c6a6a908962",
+		"name": "API Assesment 2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32196285"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.openweathermap.org/data/2.5/weather?lat=23.0225&lon=72.5714&appid=25a71854d5f59dd667adcd81683c0ba3",
+					"protocol": "https",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"weather"
+					],
+					"query": [
+						{
+							"key": "exclude",
+							"value": "{part}",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "23.0225"
+						},
+						{
+							"key": "lon",
+							"value": "72.5714"
+						},
+						{
+							"key": "appid",
+							"value": "25a71854d5f59dd667adcd81683c0ba3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "value",
+				"value": "{{value}}",
+				"type": "string"
+			},
+			{
+				"key": "key",
+				"value": "{{key}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "query",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "value",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "key",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "in",
+			"value": "",
+			"type": "default"
+		}
+	]
+}

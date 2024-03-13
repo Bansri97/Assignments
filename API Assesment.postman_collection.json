@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "4391ebc3-9aec-4753-92fb-9e6781068caf",
+		"name": "API Assesment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32196285"
+	},
+	"item": [
+		{
+			"name": "Get CategorybyUser",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NWU1ZGEyY2NjMzBjYmMyZDBiZGZjNjciLCJpYXQiOjE3MDk1NjI1MTN9.p0NYOMvD73qBERVGxhPcf97dMefcOL6_1UAM3BaSK6Y",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restapilive.onrender.com/category",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AdminLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"admin@gmail.com\",\r\n    \"password\"  : \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/alogin",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"alogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MDk1NjE1ODl9.pHIhqVQ99_FLSCQN8x5Rwf7uKeLaUEo1Vii5sxvKDWs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restapilive.onrender.com/deletecat?did=659921e278dfdb1b3ebe146e",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"deletecat"
+					],
+					"query": [
+						{
+							"key": "did",
+							"value": "659921e278dfdb1b3ebe146e"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCategoryby User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://restapilive.onrender.com/addcategory",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"addcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user registration",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"fname\" :\"Bansri\",\r\n    \"lname\" : \"Kapadia\",\r\n    \"email\" : \"bansukapadia268@gmail.com\",\r\n    \"phno\" : \"9879973485\",\r\n    \"pass\" : \"5555\",\r\n    \"gender\" :\"female\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/userreg",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"userreg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"bansukapadia268@gmail.com\",\r\n    \"pass\":\"5555\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/userlogin",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"userlogin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCategorybyAdmin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MDk1NjE1ODl9.pHIhqVQ99_FLSCQN8x5Rwf7uKeLaUEo1Vii5sxvKDWs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restapilive.onrender.com/category",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddCategory by Admin",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MDk1NjE1ODl9.pHIhqVQ99_FLSCQN8x5Rwf7uKeLaUEo1Vii5sxvKDWs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"catname\" : \"Watch\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://restapilive.onrender.com/addcategory",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"addcategory"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletenonexistingproductbyadmin",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "admin-auth-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2ZkYjRmZGNiN2MxNDVhOWNiZjZmZWYiLCJpYXQiOjE3MDk1NjE1ODl9.pHIhqVQ99_FLSCQN8x5Rwf7uKeLaUEo1Vii5sxvKDWs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restapilive.onrender.com/deletecat?did=nonexistingproduct",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"deletecat"
+					],
+					"query": [
+						{
+							"key": "did",
+							"value": "nonexistingproduct"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
